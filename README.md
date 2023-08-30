@@ -1,4 +1,4 @@
-# POC-dotnet-ExtractPdfContent
+# POC .NET - Extract PDF content
 
 🔬 Proof of Concept of extracting content from PDF files using multiple PDF libraries.
 
