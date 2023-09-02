@@ -7,7 +7,7 @@ Libraries to use:
 - iTextSharp.LGPLv2.Core
 - PdfPig
 - docnet
-- PdfSharp
+- PdfSharpCore
 
 Refer to this article: [Reading a PDF in C# on .NET Core](https://dev.to/eliotjones/reading-a-pdf-in-c-on-net-core-43ef)
 
