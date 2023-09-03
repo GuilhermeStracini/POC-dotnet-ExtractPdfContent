@@ -19,7 +19,7 @@ internal static class Program
     {
         Console.WriteLine("Hello, World!");
 
-        var extractor = new ITextSharpExample();
+        var extractor = new PdfPigExample();
         var content = extractor.Extract(ExampleUrl);
 
         Console.WriteLine(content);
