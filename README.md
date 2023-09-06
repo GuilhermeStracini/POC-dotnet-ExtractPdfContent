@@ -1,5 +1,9 @@
 # PoC .NET - Extract PDF content
 
+[![wakatime](https://wakatime.com/badge/github/GuilhermeStracini/POC-dotnet-ExtractPdfContent.svg)](https://wakatime.com/badge/github/GuilhermeStracini/POC-dotnet-ExtractPdfContent)
+[![Deploy via ftp](https://github.com/GuilhermeStracini/POC-dotnet-ExtractPdfContent/actions/workflows/build.yml/badge.svg)](https://github.com/GuilhermeStracini/POC-dotnet-ExtractPdfContent/actions/workflows/build.yml)
+[![PHP Linting](https://github.com/GuilhermeStracini/POC-dotnet-ExtractPdfContent/actions/workflows/linter.yml/badge.svg)](https://github.com/GuilhermeStracini/POC-dotnet-ExtractPdfContent/actions/workflows/linter.yml)
+
 🔬 Proof of Concept of extracting content from PDF files using multiple PDF libraries.
 
 Libraries to use:
