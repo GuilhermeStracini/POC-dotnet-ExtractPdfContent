@@ -1,10 +1,16 @@
 # PoC .NET - Extract PDF content
 
+🔬 Proof of Concept of extracting content from PDF files using multiple PDF libraries.
+
 [![wakatime](https://wakatime.com/badge/github/GuilhermeStracini/POC-dotnet-ExtractPdfContent.svg)](https://wakatime.com/badge/github/GuilhermeStracini/POC-dotnet-ExtractPdfContent)
+[![Maintainability](https://api.codeclimate.com/v1/badges/0473f6981139c13f8820/maintainability)](https://codeclimate.com/github/GuilhermeStracini/POC-dotnet-ExtractPdfContent/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/0473f6981139c13f8820/test_coverage)](https://codeclimate.com/github/GuilhermeStracini/POC-dotnet-ExtractPdfContent/test_coverage)
+[![CodeFactor](https://www.codefactor.io/repository/github/GuilhermeStracini/POC-dotnet-ExtractPdfContent/badge)](https://www.codefactor.io/repository/github/GuilhermeStracini/POC-dotnet-ExtractPdfContent)
+[![GitHub license](https://img.shields.io/github/license/GuilhermeStracini/POC-dotnet-ExtractPdfContent)](https://github.com/GuilhermeStracini/POC-dotnet-ExtractPdfContent)
+[![GitHub last commit](https://img.shields.io/github/last-commit/GuilhermeStracini/POC-dotnet-ExtractPdfContent)](https://github.com/GuilhermeStracini/POC-dotnet-ExtractPdfContent)
 [![Deploy via ftp](https://github.com/GuilhermeStracini/POC-dotnet-ExtractPdfContent/actions/workflows/build.yml/badge.svg)](https://github.com/GuilhermeStracini/POC-dotnet-ExtractPdfContent/actions/workflows/build.yml)
 [![PHP Linting](https://github.com/GuilhermeStracini/POC-dotnet-ExtractPdfContent/actions/workflows/linter.yml/badge.svg)](https://github.com/GuilhermeStracini/POC-dotnet-ExtractPdfContent/actions/workflows/linter.yml)
 
-🔬 Proof of Concept of extracting content from PDF files using multiple PDF libraries.
 
 Libraries to use:
 
