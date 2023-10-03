@@ -1,1 +1,4 @@
 theme: jekyll-theme-cayman
+title: PoC .NET - Extract PDF content
+description: 🔬 Proof of Concept of extracting content from PDF files using multiple PDF libraries
+show_downloads: true
