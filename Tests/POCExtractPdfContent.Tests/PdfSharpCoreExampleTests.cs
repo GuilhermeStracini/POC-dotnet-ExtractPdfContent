@@ -1,6 +1,6 @@
 namespace POCExtractPdfContent.Tests;
 
-public class DocNetExampleTests
+public class PdfSharpCoreExampleTests
 {
     [Fact]
     public void Test1()
