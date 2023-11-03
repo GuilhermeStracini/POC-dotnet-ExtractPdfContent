@@ -1,14 +1,14 @@
 ﻿using iTextSharp.text.pdf;
 using System.Text;
 
-namespace POCExtractPdfContent;
+namespace POCExtractPdfContent.Extractors;
 
 /// <summary>
 /// Class ITextSharpExample.
-/// Implements the <see cref="POCExtractPdfContent.IPdfExtractor" />
+/// Implements the <see cref="IPdfExtractor" />
 /// </summary>
-/// <seealso cref="POCExtractPdfContent.IPdfExtractor" />
-public class ITextSharpExample : IPdfExtractor
+/// <seealso cref="IPdfExtractor" />
+public class TextSharpExample : IPdfExtractor
 {
     /// <summary>
     /// Extracts the specified path.
@@ -29,7 +29,7 @@ public class ITextSharpExample : IPdfExtractor
             {
                 var currentText = tokenizer.StringValue;
                 currentText = Encoding.UTF8.GetString(
-                    ASCIIEncoding.Convert(
+                    Encoding.Convert(
                         Encoding.Default,
                         Encoding.UTF8,
                         Encoding.Default.GetBytes(currentText)

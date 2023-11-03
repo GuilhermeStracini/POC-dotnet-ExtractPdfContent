@@ -1,4 +1,6 @@
-﻿namespace POCExtractPdfContent;
+﻿using POCExtractPdfContent.Extractors;
+
+namespace POCExtractPdfContent;
 
 /// <summary>
 /// Class Program.
@@ -14,12 +16,11 @@ internal static class Program
     /// <summary>
     /// Defines the entry point of the application.
     /// </summary>
-    /// <param name="args">The arguments.</param>
-    static void Main(string[] args)
+    static void Main()
     {
         Console.WriteLine("Hello, World!");
 
-        var extractor = new PdfPigExample();
+        var extractor = new PdfSharpCoreExample();
         var content = extractor.Extract(ExampleUrl);
 
         Console.WriteLine(content);

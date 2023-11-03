@@ -1,4 +1,4 @@
-﻿namespace POCExtractPdfContent;
+﻿namespace POCExtractPdfContent.Extractors;
 
 /// <summary>
 /// Interface IPdfExtractor
