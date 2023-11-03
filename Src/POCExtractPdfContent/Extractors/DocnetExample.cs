@@ -1,13 +1,13 @@
 ﻿using UglyToad.PdfPig;
 using UglyToad.PdfPig.DocumentLayoutAnalysis.TextExtractor;
 
-namespace POCExtractPdfContent;
+namespace POCExtractPdfContent.Extractors;
 
 /// <summary>
 /// Class PdfPigExample.
-/// Implements the <see cref="POCExtractPdfContent.IPdfExtractor" />
+/// Implements the <see cref="IPdfExtractor" />
 /// </summary>
-/// <seealso cref="POCExtractPdfContent.IPdfExtractor" />
+/// <seealso cref="IPdfExtractor" />
 public class PdfPigExample : IPdfExtractor
 {
     /// <summary>
