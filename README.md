@@ -11,14 +11,29 @@
 [![Deploy via ftp](https://github.com/GuilhermeStracini/POC-dotnet-ExtractPdfContent/actions/workflows/build.yml/badge.svg)](https://github.com/GuilhermeStracini/POC-dotnet-ExtractPdfContent/actions/workflows/build.yml)
 [![PHP Linting](https://github.com/GuilhermeStracini/POC-dotnet-ExtractPdfContent/actions/workflows/linter.yml/badge.svg)](https://github.com/GuilhermeStracini/POC-dotnet-ExtractPdfContent/actions/workflows/linter.yml)
 
-
 Libraries to use:
 
+- [docnet](https://github.com/GowenGit/docnet)
 - [iTextSharp.LGPLv2.Core](https://github.com/VahidN/iTextSharp.LGPLv2.Core)
 - [PdfPig](https://github.com/UglyToad/PdfPig/)
-- [docnet](https://github.com/GowenGit/docnet)
-- [PdfSharpCore](https://github.com/ststeiger/PdfSharpCore)
+- ~~[PdfSharpCore](https://github.com/ststeiger/PdfSharpCore)~~ **This library doesn't support extract text yet**
 
 Refer to this article: [Reading a PDF in C# on .NET Core](https://dev.to/eliotjones/reading-a-pdf-in-c-on-net-core-43ef)
 
 The main goal of this POC is to test the available options we have now to read effectively content from PDF files and replace the current [iTextSharp - for .NET Framework](https://www.nuget.org/packages/iTextSharp).
+
+---
+
+## Results
+
+### DocNet
+
+So far is the best
+
+### iTextSharp
+
+Looks good
+
+### PdfPig
+
+Some pitfalls to be addressed
