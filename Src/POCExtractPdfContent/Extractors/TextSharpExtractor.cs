@@ -18,28 +18,20 @@ public class TextSharpExtractor : IPdfExtractor
     public string Extract(byte[] data)
     {
         var stringsList = new List<string>();
-        var reader = new PdfReader(data);
+        using var reader = new PdfReader(data);
 
         var contentBytes = reader.GetPageContent(1);
         var tokenizer = new PrTokeniser(new RandomAccessFileOrArray(contentBytes));
 
         while (tokenizer.NextToken())
         {
-            if (tokenizer.TokenType == PrTokeniser.TK_STRING)
+            if (tokenizer.TokenType != PrTokeniser.TK_STRING)
             {
-                var currentText = tokenizer.StringValue;
-                currentText = Encoding.UTF8.GetString(
-                    Encoding.Convert(
-                        Encoding.Default,
-                        Encoding.UTF8,
-                        Encoding.Default.GetBytes(currentText)
-                    )
-                );
-                stringsList.Add(currentText);
+                continue;
             }
-        }
 
-        reader.Close();
+            stringsList.Add(tokenizer.StringValue);
+        }
 
         return string.Join("", stringsList);
     }
