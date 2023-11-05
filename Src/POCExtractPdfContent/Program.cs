@@ -20,18 +20,20 @@ internal static class Program
     /// </summary>
     static void Main()
     {
+        var data = Helper.DownloadContent(ExampleUrl);
+
         Console.WriteLine("Hello, World!");
 
         var docNet = new DocNetExtractor();
-        var docNetContent = docNet.Extract(ExampleUrl);
+        var docNetContent = docNet.Extract(data);
         Console.WriteLine(docNetContent);
 
         var pdfPig = new PdfPigExtractor();
-        var pdfPigContext = pdfPig.Extract(ExampleUrl);
+        var pdfPigContext = pdfPig.Extract(data);
         Console.WriteLine(pdfPigContext);
 
         var textSharp = new TextSharpExtractor();
-        var textSharpContent = textSharp.Extract(ExampleUrl);
+        var textSharpContent = textSharp.Extract(data);
         Console.WriteLine(textSharpContent);
     }
 }

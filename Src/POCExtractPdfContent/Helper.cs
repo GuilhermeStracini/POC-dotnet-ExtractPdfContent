@@ -1,4 +1,7 @@
-﻿namespace POCExtractPdfContent;
+﻿using iTextSharp.text.pdf;
+using iTextSharp.text;
+
+namespace POCExtractPdfContent;
 
 /// <summary>
 /// Class Helper.
@@ -14,5 +17,29 @@ public static class Helper
     {
         using var httpClient = new HttpClient();
         return httpClient.GetByteArrayAsync(url).Result;
+    }
+
+    /// <summary>
+    /// Creates the sample PDF file.
+    /// </summary>
+    /// <returns>System.Byte[].</returns>
+    public static byte[] CreateSamplePdfFile()
+    {
+        using var stream = new MemoryStream();
+        using (var document = new Document())
+        {
+            var writer = PdfWriter.GetInstance(document, stream);
+            document.AddAuthor("Guilherme Branco Stracini");
+            document.Open();
+            document.Add(new Paragraph("Hello World - PDF Extractor example!"));
+
+            document.NewPage();
+            document.Add(new Phrase(""));
+
+            document.NewPage();
+            writer.PageEmpty = false;
+        }
+
+        return stream.ToArray();
     }
 }

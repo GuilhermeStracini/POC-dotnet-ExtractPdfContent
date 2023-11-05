@@ -11,14 +11,14 @@ namespace POCExtractPdfContent.Extractors;
 public class TextSharpExtractor : IPdfExtractor
 {
     /// <summary>
-    /// Extracts the specified path.
+    /// Extracts the specified data.
     /// </summary>
-    /// <param name="path">The path.</param>
+    /// <param name="data">The data.</param>
     /// <returns>System.String.</returns>
-    public string Extract(string path)
+    public string Extract(byte[] data)
     {
         var stringsList = new List<string>();
-        var reader = new PdfReader(new Uri(path));
+        var reader = new PdfReader(data);
 
         var contentBytes = reader.GetPageContent(1);
         var tokenizer = new PrTokeniser(new RandomAccessFileOrArray(contentBytes));

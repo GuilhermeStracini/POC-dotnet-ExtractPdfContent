@@ -6,9 +6,9 @@
 public interface IPdfExtractor
 {
     /// <summary>
-    /// Extracts the specified path.
+    /// Extracts the specified data.
     /// </summary>
-    /// <param name="path">The path.</param>
+    /// <param name="data">The data.</param>
     /// <returns>System.String.</returns>
-    string Extract(string path);
+    string Extract(byte[] data);
 }

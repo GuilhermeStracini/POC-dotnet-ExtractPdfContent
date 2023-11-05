@@ -1,16 +1,16 @@
-﻿using POCExtractPdfContent.Extractors;
-using FluentAssertions;
+﻿using FluentAssertions;
+using POCExtractPdfContent.Extractors;
 using Xunit;
 
 namespace POCExtractPdfContent.Tests.Extractors
 {
-    public class TextSharpExtractorTests
+    public class DocNetExtractorTests
     {
         [Fact]
         public void Extract_StateUnderTest_ExpectedBehavior()
         {
             // Arrange
-            var textSharpExtractor = new TextSharpExtractor();
+            var textSharpExtractor = new DocNetExtractor();
             var data = Helper.CreateSamplePdfFile();
 
             // Act
