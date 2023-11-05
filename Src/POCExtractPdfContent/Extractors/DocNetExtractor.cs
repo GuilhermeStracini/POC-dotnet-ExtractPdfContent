@@ -3,7 +3,10 @@ using Docnet.Core;
 
 namespace POCExtractPdfContent.Extractors;
 
-public class DocnetExample : IPdfExtractor
+/// <summary>
+/// Class DocNetExtractor.
+/// </summary>
+public class DocNetExtractor : IPdfExtractor
 {
     /// <summary>
     /// Extracts the specified path.

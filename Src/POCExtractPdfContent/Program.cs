@@ -22,9 +22,16 @@ internal static class Program
     {
         Console.WriteLine("Hello, World!");
 
-        var extractor = new DocnetExample();
-        var content = extractor.Extract(ExampleUrl);
+        var docNet = new DocNetExtractor();
+        var docNetContent = docNet.Extract(ExampleUrl);
+        Console.WriteLine(docNetContent);
 
-        Console.WriteLine(content);
+        var pdfPig = new PdfPigExtractor();
+        var pdfPigContext = pdfPig.Extract(ExampleUrl);
+        Console.WriteLine(pdfPigContext);
+
+        var textSharp = new TextSharpExtractor();
+        var textSharpContent = textSharp.Extract(ExampleUrl);
+        Console.WriteLine(textSharpContent);
     }
 }

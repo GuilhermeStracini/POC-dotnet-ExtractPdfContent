@@ -4,11 +4,11 @@ using System.Text;
 namespace POCExtractPdfContent.Extractors;
 
 /// <summary>
-/// Class ITextSharpExample.
+/// Class ITextSharpExtractor.
 /// Implements the <see cref="IPdfExtractor" />
 /// </summary>
 /// <seealso cref="IPdfExtractor" />
-public class TextSharpExample : IPdfExtractor
+public class TextSharpExtractor : IPdfExtractor
 {
     /// <summary>
     /// Extracts the specified path.
