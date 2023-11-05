@@ -4,20 +4,19 @@ using UglyToad.PdfPig.DocumentLayoutAnalysis.TextExtractor;
 namespace POCExtractPdfContent.Extractors;
 
 /// <summary>
-/// Class PdfPigExample.
+/// Class PdfPigExtractor.
 /// Implements the <see cref="IPdfExtractor" />
 /// </summary>
 /// <seealso cref="IPdfExtractor" />
-public class PdfPigExample : IPdfExtractor
+public class PdfPigExtractor : IPdfExtractor
 {
     /// <summary>
-    /// Extracts the specified path.
+    /// Extracts the specified data.
     /// </summary>
-    /// <param name="path">The path.</param>
+    /// <param name="data">The data.</param>
     /// <returns>System.String.</returns>
-    public string Extract(string path)
+    public string Extract(byte[] data)
     {
-        var data = Helper.DownloadContent(path);
         var document = PdfDocument.Open(data);
         var page = document.GetPage(1);
         var text = ContentOrderTextExtractor.GetText(page);

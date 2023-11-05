@@ -3,18 +3,20 @@ using Docnet.Core;
 
 namespace POCExtractPdfContent.Extractors;
 
-public class DocnetExample : IPdfExtractor
+/// <summary>
+/// Class DocNetExtractor.
+/// </summary>
+public class DocNetExtractor : IPdfExtractor
 {
     /// <summary>
-    /// Extracts the specified path.
+    /// Extracts the specified data.
     /// </summary>
-    /// <param name="path">The path.</param>
+    /// <param name="data">The data.</param>
     /// <returns>System.String.</returns>
-    public string Extract(string path)
+    public string Extract(byte[] data)
     {
-        var data = Helper.DownloadContent(path);
         using var docReader = DocLib.Instance.GetDocReader(data, new PageDimensions());
-        var page = docReader.GetPageReader(1);
+        var page = docReader.GetPageReader(0);
         var text = page.GetText();
         return text;
     }
