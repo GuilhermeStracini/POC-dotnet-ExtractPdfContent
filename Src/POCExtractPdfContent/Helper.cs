@@ -42,4 +42,15 @@ public static class Helper
 
         return stream.ToArray();
     }
+
+    /// <summary>
+    /// Saves the content.
+    /// </summary>
+    /// <param name="library">The library.</param>
+    /// <param name="content">The content.</param>
+    public static void SaveContent(string library, string content)
+    {
+        var fileName = $"result-{library}.txt";
+        File.WriteAllText(fileName, content);
+    }
 }

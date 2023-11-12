@@ -8,27 +8,29 @@ namespace POCExtractPdfContent;
 internal static class Program
 {
     /// <summary>
-    /// The example URL
-    /// </summary>
-    private const string ExampleUrl =
-#pragma warning disable S1075
-        "https://www2.nuclea.com.br/Monitoramento/Participantes_Homologados.pdf";
-#pragma warning restore S1075
-
-    /// <summary>
     /// Defines the entry point of the application.
     /// </summary>
     static void Main()
     {
-        var data = Helper.DownloadContent(ExampleUrl);
-
         Console.WriteLine("Hello, World!");
+
+        Console.Write("Inform the PDF url: ");
+        var url = Console.ReadLine();
+
+        if (string.IsNullOrWhiteSpace(url))
+        {
+            Console.WriteLine("Invalid PDF url!");
+            return;
+        }
+
+        var data = Helper.DownloadContent(url);
 
         Console.WriteLine("---------------------------------------------------------------");
         Console.WriteLine("DocNet");
         Console.WriteLine("---------------------------------------------------------------");
         var docNet = new DocNetExtractor();
         var docNetContent = docNet.Extract(data);
+        Helper.SaveContent("DocNet", docNetContent);
         Console.WriteLine(docNetContent);
         Console.WriteLine("\r\n");
 
@@ -36,8 +38,9 @@ internal static class Program
         Console.WriteLine("PdfPig");
         Console.WriteLine("---------------------------------------------------------------");
         var pdfPig = new PdfPigExtractor();
-        var pdfPigContext = pdfPig.Extract(data);
-        Console.WriteLine(pdfPigContext);
+        var pdfPigContent = pdfPig.Extract(data);
+        Helper.SaveContent("PdfPig", pdfPigContent);
+        Console.WriteLine(pdfPigContent);
         Console.WriteLine("\r\n");
 
         Console.WriteLine("---------------------------------------------------------------");
@@ -45,6 +48,7 @@ internal static class Program
         Console.WriteLine("---------------------------------------------------------------");
         var textSharp = new TextSharpExtractor();
         var textSharpContent = textSharp.Extract(data);
+        Helper.SaveContent("iTextSharp", textSharpContent);
         Console.WriteLine(textSharpContent);
         Console.WriteLine("\r\n");
     }
