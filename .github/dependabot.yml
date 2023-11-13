@@ -11,8 +11,9 @@ updates:
   reviewers: 
     - "guibranco"
   labels:
-    - "NuGet"
+    - "nuget"
     - ".NET"
+    - "packages"
     - "dependencies"
 
 - package-ecosystem: "github-actions"
@@ -25,5 +26,5 @@ updates:
   reviewers: 
     - "guibranco"
   labels:
-    - "GitHub Actions"
+    - "github-actions"
     - "dependencies"
