@@ -1,5 +1,5 @@
-﻿using Docnet.Core.Models;
-using Docnet.Core;
+﻿using Docnet.Core;
+using Docnet.Core.Models;
 
 namespace POCExtractPdfContent.Extractors;
 
