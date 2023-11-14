@@ -1,5 +1,5 @@
-﻿using iTextSharp.text.pdf;
-using iTextSharp.text;
+﻿using iTextSharp.text;
+using iTextSharp.text.pdf;
 
 namespace POCExtractPdfContent;
 

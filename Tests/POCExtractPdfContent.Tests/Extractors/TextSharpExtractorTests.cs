@@ -1,5 +1,5 @@
-﻿using POCExtractPdfContent.Extractors;
-using FluentAssertions;
+﻿using FluentAssertions;
+using POCExtractPdfContent.Extractors;
 using Xunit;
 
 namespace POCExtractPdfContent.Tests.Extractors
