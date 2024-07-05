@@ -6,8 +6,8 @@
 [![CodeFactor](https://www.codefactor.io/repository/github/GuilhermeStracini/POC-dotnet-ExtractPdfContent/badge)](https://www.codefactor.io/repository/github/GuilhermeStracini/POC-dotnet-ExtractPdfContent)
 [![GitHub license](https://img.shields.io/github/license/GuilhermeStracini/POC-dotnet-ExtractPdfContent)](https://github.com/GuilhermeStracini/POC-dotnet-ExtractPdfContent)
 [![GitHub last commit](https://img.shields.io/github/last-commit/GuilhermeStracini/POC-dotnet-ExtractPdfContent)](https://github.com/GuilhermeStracini/POC-dotnet-ExtractPdfContent)
-[![Deploy via ftp](https://github.com/GuilhermeStracini/POC-dotnet-ExtractPdfContent/actions/workflows/build.yml/badge.svg)](https://github.com/GuilhermeStracini/POC-dotnet-ExtractPdfContent/actions/workflows/build.yml)
-[![PHP Linting](https://github.com/GuilhermeStracini/POC-dotnet-ExtractPdfContent/actions/workflows/linter.yml/badge.svg)](https://github.com/GuilhermeStracini/POC-dotnet-ExtractPdfContent/actions/workflows/linter.yml)
+[![Build](https://github.com/GuilhermeStracini/POC-dotnet-ExtractPdfContent/actions/workflows/build.yml/badge.svg)](https://github.com/GuilhermeStracini/POC-dotnet-ExtractPdfContent/actions/workflows/build.yml)
+[![Linting](https://github.com/GuilhermeStracini/POC-dotnet-ExtractPdfContent/actions/workflows/linter.yml/badge.svg)](https://github.com/GuilhermeStracini/POC-dotnet-ExtractPdfContent/actions/workflows/linter.yml)
 
 🔬 Proof of Concept of extracting content from PDF files using multiple PDF libraries.
 
