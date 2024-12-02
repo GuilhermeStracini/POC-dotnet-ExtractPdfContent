@@ -9,7 +9,7 @@
 
   <ItemGroup>
     <PackageReference Include="Docnet.Core" Version="2.6.0" />
-    <PackageReference Include="iTextSharp.LGPLv2.Core" Version="3.4.23" />
+    <PackageReference Include="iTextSharp.LGPLv2.Core" Version="3.4.24" />
     <PackageReference Include="PdfPig" Version="0.1.9" />
   </ItemGroup>
 
